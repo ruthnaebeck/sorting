@@ -27,3 +27,16 @@ describe('Merge Sort', function(){
   });
 
 });
+
+
+describe('mergeSort', function(){
+
+  it('with 1 or fewer elements, returns sorted array', function(){
+    expect( mergeSort([10000]) ).toEqual( [10000] );
+  });
+
+  it('does the thing it\'s supposed to do ', function(){
+    expect( mergeSort([4,2,1,3,6,7,10,9,5]) ).toEqual( [1,2,3,4,5,6,7,9,10] );
+  });
+
+});
